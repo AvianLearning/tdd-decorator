@@ -1,7 +1,6 @@
 {
   "name": "tdd_lab",
   "version": "1.0.0",
-  "description": "",
   "main": "tdd_painter_decorator.js",
   "scripts": {
     "test": "mocha models/specs"
@@ -10,5 +9,14 @@
   "license": "ISC",
   "devDependencies": {
     "mocha": "^8.1.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AvianLearning/tdd-decorator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AvianLearning/tdd-decorator/issues"
+  },
+  "homepage": "https://github.com/AvianLearning/tdd-decorator#readme",
+  "description": ""
 }
