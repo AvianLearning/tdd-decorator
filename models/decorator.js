@@ -14,4 +14,12 @@ Decorator.prototype.calculateLitres = function(paintStock) {
     return totalLitres;
 };
 
+Decorator.prototype.enoughPaint = function(area, paintStock) {
+    let totalLitres = this.calculateLitres(this.paintStock);
+    if (totalLitres >= area) {
+        return true;
+    };
+    return false;
+};
+
 module.exports = Decorator;
