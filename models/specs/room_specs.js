@@ -18,7 +18,7 @@ describe('Room', function() {
     });
 
     it('should become painted', function() {
-        room.paintRoom();
+        room.paintedRoom();
         assert.strictEqual(room.painted, true);
     })
 });

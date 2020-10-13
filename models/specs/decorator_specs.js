@@ -42,4 +42,16 @@ describe('Decorator', function() {
         assert.strictEqual(actual, true);
     });
 
+    it('should be able to paint room if enough paint', function() {
+        const hugePaintCan = new Paint(40);
+        decorator.addCan(hugePaintCan);
+        decorator.paintRoom();
+        assert.strictEqual(room.painted, true);
+    });
+
+    it('should not be able to paint room if not enough paint', function() {
+        decorator.paintRoom();
+        assert.strictEqual(room.painted, false);
+    });
+
 });
