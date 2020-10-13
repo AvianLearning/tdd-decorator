@@ -9,4 +9,9 @@ Paint.prototype.isEmpty = function() {
     return false;
 }
 
+Paint.prototype.canEmptySelf = function() {
+    remainingPaint = this.litres - this.litres;
+    return remainingPaint;
+}
+
 module.exports = Paint;
