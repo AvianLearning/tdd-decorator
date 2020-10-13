@@ -34,5 +34,12 @@ describe('Decorator', function() {
         const actual = decorator.enoughPaint(room.area, decorator.paintStock);
         assert.strictEqual(actual, false);
     });
-    
+
+    it('should be able to calculate has enough paint to paint a room', function() {
+        const hugePaintCan = new Paint(40);
+        decorator.addCan(hugePaintCan);
+        const actual = decorator.enoughPaint(room.area, decorator.paintStock);
+        assert.strictEqual(actual, true);
+    });
+
 });
